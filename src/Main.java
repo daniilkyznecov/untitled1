@@ -67,6 +67,7 @@ public class Main {
         for (int day = firstFriday; day <= 31; day += 7) {
             System.out.println("егодня пятница, " + day + "-е число. Необходимо подготовить отчет");
         }
+
         System.out.println("Задача 8");
         int period = 79;
         int startSeeing = 0;
