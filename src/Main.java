@@ -8,7 +8,7 @@ public class Main {
         int month = 0;
         while (sum < desiredSum) {
             sum += amount;
-            sum = (int) (sum * (1 + percent));
+            sum = (int) (sum * amount);
             month++;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
         }
@@ -65,16 +65,16 @@ public class Main {
         System.out.println("Задача 7");
         int firstFriday = 3;
         for (int day = firstFriday; day <= 31; day += 7) {
-            System.out.println("егодня пятница, " + day + "-е число. Необходимо подготовить отчет");
+            System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
         }
 
         System.out.println("Задача 8");
         int period = 79;
         int startSeeing = 0;
-        int stsrt = currentYear - 200;
+        int start = currentYear - 200;
         int end = currentYear + 100;
         for (int year = startSeeing; year < end; year += period) {
-            if (year > stsrt) {
+            if (year > start) {
                 System.out.println(year);
             }
         }
